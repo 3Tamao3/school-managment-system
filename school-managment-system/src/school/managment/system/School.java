@@ -36,8 +36,8 @@ public class School {
         return totalMoneyEarned;
     }
 
-    public static void updateTotalMoneyEarned(int MoneyEarned) {
-        totalMoneyEarned += MoneyEarned;
+    public static void updateTotalMoneyEarned(int moneyEarned) {
+        totalMoneyEarned += moneyEarned;
     }
 
     public int getTotalMoneySpent() {

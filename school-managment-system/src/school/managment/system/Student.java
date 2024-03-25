@@ -21,7 +21,7 @@ public class Student {
     }
 
     public void payFees(int fees){
-        feesPaid+=fees;
+        feesPaid += fees;
         School.updateTotalMoneyEarned(feesPaid);
     }
 
@@ -51,6 +51,6 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student's name: " + name + " | Total fees paid so far: " + feesPaid;
+        return "Student's name: " + name + " || Total fees paid so far: " + feesPaid;
     }
 }

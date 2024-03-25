@@ -12,19 +12,19 @@ public class Teacher {
         this.id = id;
         this.name = name;
         this.salary = salary;
-        this.salaryEarned = salaryEarned;
+        this.salaryEarned = 0;
     }
 
-    public int id(){
+    public int getId(){
         return this.id;
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     public int getSalary(){
-        return this.salary;
+        return salary;
     }
 
     public void setSalary(int salary){
@@ -32,12 +32,12 @@ public class Teacher {
     }
 
     public void receiveSalary(int salary){
-        salaryEarned+=salary;
+        salaryEarned += salary;
         School.updateTotalMoneySpent(salary);
     }
 
     @Override
     public String toString() {
-        return "Name of the Teacher: " + name + " | Total salary earned: " + salaryEarned;
+        return "Name of the Teacher: " + name + " || Total salary earned: " + salaryEarned;
     }
 }
